@@ -1,6 +1,6 @@
 {
   "name": "better-folding",
-  "displayName": "Better Folding",
+  "displayName": "Better Folding+",
   "description": "Improve the folding experience in VS Code",
   "version": "0.5.1",
   "engines": {
@@ -8,10 +8,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/mtbaqer/vscode-better-folding.git"
+    "url": "https://github.com/AtroxEGO/vscode-better-folding"
   },
   "icon": "icon_large.png",
-  "publisher": "MohammadBaqer",
+  "publisher": "AtroxEGO",
   "categories": [
     "Other"
   ],
@@ -112,7 +112,8 @@
     "watch": "tsc -watch -p ./",
     "pretest": "npm run compile && npm run lint",
     "lint": "eslint src --ext ts",
-    "test": "node ./out/test/runTest.js"
+    "test": "node ./out/test/runTest.js",
+    "deploy": "vsce publish --yarn"
   },
   "devDependencies": {
     "@types/glob": "^8.0.0",
@@ -121,6 +122,7 @@
     "@types/vscode": "^1.74.0",
     "@typescript-eslint/eslint-plugin": "^5.48.1",
     "@vscode/test-electron": "^2.2.0",
+    "@vscode/vsce": "^3.2.1",
     "esbuild": "^0.17.4",
     "eslint": "^8.32.0",
     "glob": "^8.0.3",
