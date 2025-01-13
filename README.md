@@ -2,6 +2,8 @@
     <img width="128" alt="icon" src="https://raw.githubusercontent.com/mtbaqer/vscode-better-folding/main/icon_large.png">
 </p>
 
+> This is a FORK of [the original library](https://github.com/mtbaqer/vscode-better-folding) with a few tweaks and fixes, after the original one stopped getting updates.
+
 <h2 align="center"> Better Folding - VSCode Extension </h2>
 
 # Better Folding
