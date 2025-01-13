@@ -35,55 +35,55 @@
     "configuration": {
       "title": "Better Folding",
       "properties": {
-        "betterFolding.foldClosingBrackets": {
+        "betterFoldingPlus.foldClosingBrackets": {
           "order": 1,
           "type": "boolean",
           "default": true,
           "markdownDescription": "Include closing brackets like `}` and `]` in the folding range."
         },
-        "betterFolding.foldClosingTags": {
+        "betterFoldingPlus.foldClosingTags": {
           "order": 1,
           "type": "boolean",
           "default": true,
           "markdownDescription": "Include closing tags like `</div>` and `</p>` in the folding range."
         },
-        "betterFolding.showFoldedBodyLinesCount": {
+        "betterFoldingPlus.showFoldedBodyLinesCount": {
           "order": 2,
           "type": "boolean",
           "default": true,
           "markdownDescription": "Shows the number of lines folded, excluding the closing bracket line. \n\nExample: `function example() { ⋯ 3 lines ⋯ `"
         },
-        "betterFolding.showFoldedBrackets": {
+        "betterFoldingPlus.showFoldedBrackets": {
           "order": 3,
           "type": "boolean",
           "default": true,
-          "markdownDescription": "Shows brackets like `{` and `}` in the collapsed text. Only applies if `#betterFolding.foldClosingBrackets#` is `enabled`. \n\nExample: `function example() {…}`."
+          "markdownDescription": "Shows brackets like `{` and `}` in the collapsed text. Only applies if `#betterFoldingPlus.foldClosingBrackets#` is `enabled`. \n\nExample: `function example() {…}`."
         },
-        "betterFolding.showFunctionParameters": {
+        "betterFoldingPlus.showFunctionParameters": {
           "order": 4,
           "type": "boolean",
           "default": true,
-          "markdownDescription": "Shows the function parameters in the collapsed text for functions with params in multiple lines. Only applies if `#betterFolding.showFoldedBrackets#` is `enabled`. \n\nExample: `function example(firstParam, secondParam) {…}`."
+          "markdownDescription": "Shows the function parameters in the collapsed text for functions with params in multiple lines. Only applies if `#betterFoldingPlus.showFoldedBrackets#` is `enabled`. \n\nExample: `function example(firstParam, secondParam) {…}`."
         },
-        "betterFolding.chainFoldingRanges": {
+        "betterFoldingPlus.chainFoldingRanges": {
           "order": 5,
           "type": "boolean",
           "default": true,
-          "markdownDescription": "On folding a range, fold all the ranges that start on the same line where the original range ends. Only applies if `#betterFolding.showFoldedBrackets#` is `enabled`. \n\nEnabled: `function example(…) {…}`. \n\nDisabled: `function example(…) {`."
+          "markdownDescription": "On folding a range, fold all the ranges that start on the same line where the original range ends. Only applies if `#betterFoldingPlus.showFoldedBrackets#` is `enabled`. \n\nEnabled: `function example(…) {…}`. \n\nDisabled: `function example(…) {`."
         },
-        "betterFolding.showOnlyRegionsDescriptions": {
+        "betterFoldingPlus.showOnlyRegionsDescriptions": {
           "order": 6,
           "type": "boolean",
           "default": false,
           "markdownDescription": "Only shows the region description in the collapsed text. \n\nExample: `// #region some text`.\n\nBecomes: `some text`."
         },
-        "betterFolding.showObjectPreviews": {
+        "betterFoldingPlus.showObjectPreviews": {
           "order": 6,
           "type": "boolean",
           "default": true,
-          "markdownDescription": "Show the first property in the collapsed text of an object literal. Only applies if `#betterFolding.showFoldedBrackets#` is `enabled`. \n\nExample: `{ id:'123',… }`."
+          "markdownDescription": "Show the first property in the collapsed text of an object literal. Only applies if `#betterFoldingPlus.showFoldedBrackets#` is `enabled`. \n\nExample: `{ id:'123',… }`."
         },
-        "betterFolding.excludedLanguages": {
+        "betterFoldingPlus.excludedLanguages": {
           "order": 7,
           "type": "array",
           "default": [],
@@ -93,11 +93,11 @@
     },
     "commands": [
       {
-        "command": "betterFolding.createZenFoldsAroundSelection",
+        "command": "betterFoldingPlus.createZenFoldsAroundSelection",
         "title": "Better Folding: Create Zen Folds Around Selection"
       },
       {
-        "command": "betterFolding.clearZenFolds",
+        "command": "betterFoldingPlus.clearZenFolds",
         "title": "Better Folding: Clear Zen Folds"
       }
     ]
