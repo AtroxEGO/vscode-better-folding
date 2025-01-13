@@ -29,17 +29,17 @@ export default abstract class BetterFoldingDecorator extends Disposable {
 
   protected abstract updateEditorDecorations(editor: TextEditor): void;
 
-  //This is how Better Folding is able to provide custom collapsedText.
+  // This is how Better Folding is able to provide custom collapsedText.
   protected newDecorationOptions(contentText: string): DecorationRenderOptions {
     return {
-      textDecoration: "none; display:none;", //Hides the folded text
+      textDecoration: "none; display:none;", // Hides the folded text
       before: {
-        //Apparently if you add width and height (any values), the text will be clickable
+        // Apparently if you add width and height (any values), the text will be clickable
         width: "0",
         height: "0",
         contentText,
         color: "grey",
-        margin: `0 -${90}% 0 0`, //Hides the original collapsed text '…'
+        margin: `0 -${100}% 0 0`, // Hides the original collapsed text '…'
         textDecoration: "none; cursor: pointer !important;",
       },
     };
