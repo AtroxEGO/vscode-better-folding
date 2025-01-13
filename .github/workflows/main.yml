@@ -1,0 +1,30 @@
+name: Publish Extension
+
+on:
+  push:
+    branches:
+      - main
+  release:
+    types:
+      - created
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    if: startsWith(github.ref, 'refs/tags/')
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '22.12.0'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Deploy Extension
+        run: npm run deploy
+        env:
+          VSCE_PAT: ${{ secrets.PAT_TOKEN }}
